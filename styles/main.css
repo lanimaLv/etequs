@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway");
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -230,7 +233,37 @@ nav ul li {
   padding-left: 18em;
   padding-top: 50px;
 }
-
+.card-hover-1 {
+  width: 450px;
+  height: 450px;
+  border-radius: 20px;
+  background-image: linear-gradient(78deg, #038b8f 1%, #7d2d9f 100%);
+}
+.card-hover-1 p {
+  float: right;
+  margin-top: 43px;
+  margin-right: 110px;
+  font-size: 22px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: 700;
+}
+.icon-1-hover {
+  margin-top: 50px;
+  margin-left: 50px;
+  float: left;
+  height: 45px;
+  width: 45px;
+}
+.inner-text-wrap-1 {
+  float: left !important;
+}
+.inner-text-wrap p {
+  font-size: 16px !important;
+  line-height: 34px !important;
+  color: #ffffff !important;
+  font-weight: 400 !important;
+}
 /* Team */
 .grad-wrapper {
   background-image: linear-gradient(
