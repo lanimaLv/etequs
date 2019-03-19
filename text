@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Title -->
+    <title>etequs</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- SEO -->
+  </head>
+
+  <body>
+    <!-- Container -->
+    <div class="container-fluid">
+      <!-- Overlay -->
+      <div class="overlay">
+        <!-- Header -->
+        <header>
+          <!-- Brand Logo -->
+          <div class="brand-logo">
+            <a href="index.html"
+              ><img
+                src="img/logo/SIte-LogoEtequs.svg"
+                width="131"
+                height="35"
+                alt="etequs logo"
+            /></a>
+          </div>
+
+          <!-- Navbar -->
+          <nav>
+            <ul>
+              <li><a href="#goal">What Is Your Goal?</a></li>
+              <li><a href="#team">Our Team</a></li>
+              <li><a href="#process">Process</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+          </nav>
+          <!--// Navbar -->
+        </header>
+
+        <!-- Hero Text Content -->
+        <div class="hero-text">
+          <h1>
+            We are Digital <span class="stc">Sales Turbo-Chargers</span><br />
+            from Northern Europe
+          </h1>
+          <!-- Sub Content -->
+          <div class="sub-content">
+            <p>
+              Comitted to provide a synergy of strategy,<br />
+              design, functionality & execution.
+            </p>
+            <div class="contact-btn">
+              <a href="#"
+                ><img src="img/btns/contact-btn.png" alt="etequs contact button"
+              /></a>
+            </div>
+          </div>
+          <!--// Sub Content -->
+        </div>
+        <!--// Hero Text Content -->
+      </div>
+      <!--// Ovaerlay -->
+
+      <div class="container-fluid text-center">
+        <!-- Section 1 -->
+        <section class="values">
+          <h2>We Believe In</h2>
+          <ul>
+            <li class="values-col">
+              <img src="img/values/value.png" alt="etequs values" />
+              <p>Show numbers and tangible impact.</p>
+            </li>
+
+            <li>
+              <img src="img/values/shadow.png" alt="shadow" />
+            </li>
+
+            <li class="growth-col">
+              <img src="img/values/growth.png" alt="etequs growth" />
+              <p>
+                Change, adapt, expand and form<br />
+                reliable partnerships.
+              </p>
+            </li>
+
+            <li>
+              <img src="img/values/shadow.png" alt="shadow" />
+            </li>
+
+            <li class="challenges-col">
+              <img src="img/values/challenges.png" alt="etequs challenges" />
+              <p>
+                Stand up straight with your shoulders<br />
+                back and climb the<br />
+                dominance hierarchy.
+              </p>
+            </li>
+          </ul>
+        </section>
+        <!--// Section 1 -->
+      </div>
+
+      <!-- Section 2 -->
+      <section class="goal" id="goal">
+        <h3>What Is Your Goal?</h3>
+
+        <!-- Cards Hover -->
+        <!--
+        <div class="cards-wrapper-hover">
+          <ul>
+            <li class="card-hover-1">
+              <img src="img/goal/1/icon1.png" alt="icon" class="icon-1-hover" />
+              <p>
+                Web Development and<br />
+                E-Commerce
+              </p>
+              <div class="inner-text-wrap-1">
+                <p>
+                  <img src="img/goal/arrow-white.png" alt="arrow" />Custom web
+                  design E-commerce site setup Retail CRM systems Func
+                </p>
+                <p><img src="img/goal/arrow-white.png" alt="arrow" /></p>
+                <p><img src="img/goal/arrow-white.png" alt="arrow" /></p>
+                <p><img src="img/goal/arrow-white.png" alt="arrow" /></p>
+                <p><img src="img/goal/arrow-white.png" alt="arrow" /></p>
+                <p><img src="img/goal/arrow-white.png" alt="arrow" /></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      -->
+        <!-- Cards -->
+        <div class="cards-wrapper">
+          <ul>
+            <!-- First Card -->
+            <li class="first-card">
+              <div class="top">
+                <img src="img/goal/1/icon1.png" class="icon1" alt="icon" />
+              </div>
+              <div class="bottom">
+                <img src="img/goal/arrow.png" class="arrow" alt="arrow" />
+                <p>
+                  Showcase Your<br />
+                  Business with the Perfect<br />
+                  Online Powerhouse
+                </p>
+              </div>
+            </li>
+
+            <!-- Second Card -->
+            <li class="second-card">
+              <div class="top">
+                <img src="img/goal/2/icon2.png" class="icon2" alt="icon" />
+              </div>
+              <div class="bottom">
+                <img src="img/goal/arrow.png" class="arrow" alt="arrow" />
+                <p>
+                  Showcase Your<br />
+                  Business with the Perfect<br />
+                  Online Powerhouse
+                </p>
+              </div>
+            </li>
+            <!--// Second Card -->
+          </ul>
+
+          <!-- Test -->
+          <div class="row-third">
+            <div class="third-card-1">
+              <div class="top">
+                <img src="img/goal/3/icon3.png" class="icon3" alt="icon" />
+              </div>
+              <div class="bottom" id="third-bottom">
+                <img src="img/goal/arrow.png" class="arrow" alt="arrow" />
+                <p>
+                  Know Exactly What You’re<br />
+                  Getting
+                </p>
+              </div>
+            </div>
+            <div class="fourth-card-1">
+              <div class="top">
+                <img src="img/goal/4/icon4.png" class="icon4" alt="icon" />
+              </div>
+              <div class="bottom">
+                <img src="img/goal/arrow.png" class="arrow" alt="arrow" />
+                <p>
+                  Plant the Cornerstones of<br />
+                  Your Business
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--// Test -->
+        </div>
+      </section>
+      <!--// Section 2 -->
+
+      <!-- Section 3 -->
+      <div class="grad-wrapper" id="team">
+        <section class="team">
+          <video autoplay muted loop id="myVideo">
+            <source src="img/team/loop.mp4" type="video/mp4" />
+          </video>
+
+          <div class="team-wrapper">
+            <div class="row-1">
+              <h4>Our Team</h4>
+              <p class="sub-title-team">
+                We practice what we sell. We believe in constant growth and
+                learning to expand the competitive edge of our partners.
+              </p>
+            </div>
+            <div class="col-wrapper">
+              <ul class="col-1-team">
+                <li class="col-title">Jānis Beķers</li>
+                <li class="position">Sales Director</li>
+                <br />
+                <li>
+                  <img src="img/team/phone.png" alt="phone" /> +371 29834869
+                </li>
+                <li><img src="img/team/email.png" alt="" /> jb@etequs.com</li>
+              </ul>
+
+              <ul class="col-2-team">
+                <li class="col-title">Krišjānis Kirilovs</li>
+                <li class="position">Chief Operations Officer</li>
+                <br />
+                <li>
+                  <img src="img/team/phone.png" alt="phone" /> +371 29560600
+                </li>
+                <li>
+                  <img src="img/team/email.png" alt="email" /> kk@etequs.com
+                </li>
+              </ul>
+
+              <ul class="col-3-team">
+                <li class="col-title">Mārtiņš Zvaigzne</li>
+                <li class="position">Market Research Lead</li>
+                <br />
+                <li>
+                  <img src="img/team/phone.png" alt="phone" /> +371 25751313
+                </li>
+                <li>
+                  <img src="img/team/email.png" alt="email" /> mz@etequs.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Our Process -->
+      <section class="process" id="process">
+        <h5>Our Process</h5>
+        <div class="process-board">
+          <!-- Process 1 -->
+          <div class="image-arrow">
+            <img
+              src="img/process/arrow1.svg"
+              class="arrow1"
+              alt="etequs arrow"
+              id="arrow-id"
+              onMouseOver="show()"
+              onMouseOut="hide()"
+            />
+          </div>
+          <div class="image-1">
+            <img
+              src="img/process/horse-head-m.png"
+              class="horse-head"
+              alt="etequs horse head"
+              id="horse-head-id"
+            />
+          </div>
+
+          <ul class="process-1" onMouseOver="show()" onMouseOut="hide()">
+            <div class="process-1-wrapper">
+              <li class="number">01</li>
+              <br />
+              <li>
+                We reveal your challenges,<br />
+                scrutinize the competition and<br />
+                suggest a direction.
+              </li>
+            </div>
+          </ul>
+
+          <!-- Process 2 -->
+          <ul class="process-2">
+            <div class="process-2-wrapper">
+              <li class="number-2">02</li>
+              <br />
+              <li class="process-title">Strategic Blackboard</li>
+              <li class="process-text-2">
+                We collaborate and present<br />
+                courses of action.
+              </li>
+            </div>
+          </ul>
+
+          <!-- Process 3 -->
+          <ul class="process-3">
+            <li class="number-3">03</li>
+            <br />
+            <li>
+              We set a work schedule for the<br />
+              coming months.
+            </li>
+          </ul>
+
+          <!-- Process 4 -->
+          <ul class="process-4">
+            <div class="process-wrapper-4">
+              <li class="number-4">04</li>
+              <br />
+              <li class="process-title">Execution</li>
+              <li class="process-text-4">
+                We’re quick on our feet and<br />
+                adapt while we’re working on<br />
+                value delivery.
+              </li>
+            </div>
+          </ul>
+
+          <!-- Process 5 -->
+          <ul class="process-5">
+            <div class="process-wrapper-5">
+              <li class="process-title">Analysis</li>
+              <li class="process-text-5">
+                We collect and compare the<br />
+                data to detect new growth<br />
+                opportunities.
+              </li>
+            </div>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Partners -->
+      <section class="partners">
+        <div class="partners-wrapper">
+          <h6>Our Integration Partners</h6>
+
+          <!-- Partners Ic Ul 1 -->
+          <ul class="row-partn-1">
+            <li><img src="img/integration/ic1.png" alt="shopify icon" /></li>
+            <li>
+              <img src="img/integration/ic2.png" alt="sharpspring icon" />
+            </li>
+            <li><img src="img/integration/ic3.png" alt="magento icon" /></li>
+            <li><img src="img/integration/ic4.png" alt="amazon icon" /></li>
+          </ul>
+
+          <!-- Partners Ic Ul 2 -->
+          <ul class="row-partn-1">
+            <li>
+              <img src="img/integration/ic5.png" alt="salesforces icon" />
+            </li>
+            <li>
+              <img src="img/integration/ic6.png" alt="double click icon" />
+            </li>
+
+            <li><img src="img/integration/ic7.png" alt="adobe icon" /></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- CTA 2 -->
+      <section class="cta2" id="contact">
+        <div class="cta-overlay">
+          <div class="cta-text">
+            <p>
+              Let’s Beat Your Competition
+              <span class="together">Together.</span>
+            </p>
+            <div class="cta2-div" id="cta2-button">
+              <img
+                src="img/btns/contact-btn.png"
+                alt="etequs contact button"
+                id="cta2-btn-slide"
+                onclick="myFunction()"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA Section 2 -->
+        <div class="cta-sec-2" id="cta2-id">
+          <p class="cta-sec-2-text">
+            Please tell us your name and email address to start a conversation:
+          </p>
+
+          <!-- Form Section -->
+          <div class="cta-form">
+            <form class="form-inline" action="#">
+              <input
+                name="firstname"
+                type="text"
+                id="name"
+                placeholder="First name:"
+              />
+              <input
+                type="email"
+                id="email"
+                placeholder="Email Address:"
+                name="email"
+              />
+              <button type="submit" id="cta2-btn">Contact Us</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer id="footer-id">
+        <p class="footer-title">To Find Us</p>
+
+        <!-- Col Foot Ul 1 -->
+        <ul class="foot-1">
+          <li class="foot-title">Etequs LTD</li>
+          <li>Street, RIga, Latvia, EU</li>
+          <br />
+          <li>
+            <img src="img/footer/phone.png" alt="phone" class="foot-phone" />
+            +371 909229992
+          </li>
+          <li>
+            <img src="img/footer/email.png" alt="email" class="foot-email" />
+            sales@etequs.com
+          </li>
+        </ul>
+
+        <!-- Col Foot Ul 2 -->
+        <ul class="foot-2">
+          <li>
+            <a href="#"><img src="img/footer/TWEtequs.svg" alt=""/></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/footer/FB-v02Etequs.svg" alt=""/></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/footer/FBEtequs.svg" alt=""/></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/footer/InstaEtequs.svg" alt=""/></a>
+          </li>
+        </ul>
+
+        <ul>
+          <li class="copyright-section">
+            All rights reserved © 2019 Etequs.<a href="#">
+              <span class="te-pr">Terms & Privacy</span></a
+            >
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <!--// Container -->
+
+    <!-- Js -->
+    <script src="js/main.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
