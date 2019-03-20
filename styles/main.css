@@ -19,17 +19,20 @@ body {
   margin: 0 !important;
   padding: 0 !important;
   position: relative;
+  overflow: visible;
 }
 .overlay {
+  position: relative;
   overflow: visible;
   margin: 0 !important;
   padding-bottom: 35em;
   max-width: 100% !important;
-  background-color: #fbfaf8;
+  /*
   background: linear-gradient(210deg, #812ba0 0%, #008e8f 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);
   z-index: 900;
+  */
 }
 #over-img {
   max-width: 100%;
