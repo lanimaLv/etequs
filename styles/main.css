@@ -18,30 +18,18 @@ body {
 .container-fluid {
   margin: 0 !important;
   padding: 0 !important;
-  position: relative;
-  overflow: visible;
-}
-.overlay {
-  position: relative;
-  overflow: visible;
-  margin: 0 !important;
-  padding-bottom: 35em;
-  max-width: 100% !important;
-  /*
-  background: linear-gradient(210deg, #812ba0 0%, #008e8f 100%);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);
-  z-index: 900;
-  */
-}
-#over-img {
-  max-width: 100%;
-}
-.navbar-nav {
-  flex-direction: row;
-  position: relative;
 }
 
+.overlay {
+  position: relative;
+  height: 300px;
+  padding-bottom: 974px;
+  max-width: 100%;
+  max-height: auto;
+
+  /* CSS Grad*/
+  background: linear-gradient(210deg, #812ba0 0%, #008e8f 100%);
+}
 .nav-item a {
   color: #ffffff !important;
   font-size: 14px;
@@ -50,9 +38,6 @@ body {
 }
 .nav-item {
   padding-right: 20px !important;
-}
-.navbar-toggler {
-  color: white !important;
 }
 .hero-text {
   text-align: center;
@@ -69,111 +54,28 @@ body {
 .sub-content {
   margin-top: 80px;
   margin-right: 20px;
-  text-align: right;
   color: #ffffff;
   font-size: 21px;
 }
-#contact-btn-id {
-  margin-top: 80px;
+#contact-btn {
+  float: right;
 }
 
-#chess-board {
-  position: absolute;
+.heroImg {
+  margin-top: 135px;
+  margin-left: 400px;
+  margin-right: 400px;
+  position: absolute !important;
   top: 0;
-  z-index: 10;
-  margin-top: 38em !important;
+  overflow: visible !important;
+  z-index: 9000;
+  max-width: 100% !important;
+  max-height: auto;
 }
-/* Mobile */
-
-/* 600 */
-@media screen and (max-width: 600px) {
-  .overlay {
-    margin: 0 !important;
-    padding-bottom: 2em;
-    background-color: #fbfaf8;
-    clip-path: none;
-  }
-  #chess-board {
-    position: absolute;
-    top: 0;
-    z-index: 1000;
-    margin-top: 50em !important;
-  }
-  .sub-content {
-    margin-top: 70px;
-    margin-right: 20px;
-    text-align: center;
-    color: #ffffff;
-    font-size: 21px;
-  }
-  #contact-btn-id {
-    margin-top: 40px;
-    text-align: center !important;
-  }
-}
-/*--600--*/
-
-/* 700 */
-@media screen and (max-width: 700px) {
-  .overlay {
-    margin: 0 !important;
-    padding-bottom: 12.5em;
-    background-color: #fbfaf8;
-    clip-path: none;
-  }
-  #chess-board {
-    position: absolute;
-    top: 0;
-    z-index: 1000;
-    margin-top: 70em !important;
-  }
-  .sub-content {
-    margin-top: 70px;
-    margin-right: 20px;
-    text-align: center;
-    color: #ffffff;
-    font-size: 21px;
-  }
-  #contact-btn-id {
-    margin-top: 40px;
-    text-align: center !important;
-  }
-}
-/*--600--*/
-
-/* 900 */
-@media screen and (max-width: 900px) {
-  .overlay {
-    margin: 0 !important;
-    padding-bottom: 25em;
-    background-color: #fbfaf8;
-    clip-path: none;
-  }
-  #chess-board {
-    position: absolute;
-    top: 0;
-    z-index: 1000;
-    margin-top: 38em !important;
-  }
-  .sub-content {
-    margin-top: 70px;
-    margin-right: 20px;
-    text-align: center;
-    color: #ffffff;
-    font-size: 21px;
-  }
-  #contact-btn-id {
-    margin-top: 40px;
-    text-align: center !important;
-  }
-}
-/*--600--*/
-/*--Mobile--*/
-
 /* Values */
 .values-wrapper {
   position: relative;
-  margin-top: 13em;
+  margin-top: 400px;
   overflow: hidden;
 }
 

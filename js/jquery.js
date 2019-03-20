@@ -17,8 +17,8 @@ $(document).ready(function() {
     if (scroll > 700) {
       $(".navbar")
         .css("transition", "3s")
-        .css("background", "black");
-      $(".navbar").css("opacity", "0.6");
+        .css("background", "black")
+        .css("opacity", "0.6");
     } else {
       $(".navbar").css("background", "none");
       $(".navbar").css("opacity", "1");
