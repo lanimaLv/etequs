@@ -7,16 +7,7 @@ html {
   margin: 0;
   padding: 0;
 }
-.container-fluid {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-ul,
-li,
-a {
-  text-decoration: none;
-  list-style-type: none;
-}
+
 body {
   font-family: "Raleway", sans-serif !important;
   overflow-y: scroll;
@@ -24,21 +15,28 @@ body {
 }
 
 /* Overlay Hero Nav */
-.overlay {
+.container-fluid {
   margin: 0 !important;
-  position: relative !important;
-  z-index: 10 !important;
+  padding: 0 !important;
+  position: relative;
+}
+.overlay {
+  overflow: visible;
+  margin: 0 !important;
   padding-bottom: 35em;
+  max-width: 100% !important;
   background-color: #fbfaf8;
   background: linear-gradient(210deg, #812ba0 0%, #008e8f 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);
-  z-index: -100;
+  z-index: 900;
+}
+#over-img {
+  max-width: 100%;
 }
 .navbar-nav {
   flex-direction: row;
   position: relative;
-  z-index: 10000;
 }
 
 .nav-item a {
@@ -49,6 +47,9 @@ body {
 }
 .nav-item {
   padding-right: 20px !important;
+}
+.navbar-toggler {
+  color: white !important;
 }
 .hero-text {
   text-align: center;
@@ -170,6 +171,7 @@ body {
 .values-wrapper {
   position: relative;
   margin-top: 13em;
+  overflow: hidden;
 }
 
 .values-wrapper h2 {
@@ -191,6 +193,8 @@ body {
 
 /* Goal */
 #goal {
+  overflow: hidden;
+  max-width: 100% !important;
   background-color: #eaecf2;
   padding-top: 20em !important;
   padding-bottom: 10em !important;
@@ -345,7 +349,9 @@ body {
   font-weight: 700 !important;
 }
 /* Team */
-
+#team {
+  overflow: hidden !important;
+}
 .jumbotron {
   position: relative;
   overflow: hidden;

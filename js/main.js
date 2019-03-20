@@ -1,5 +1,21 @@
 // Nav
+// INSERT JAVASCRIPT HERE!
+// In-view function
+const handleView = item => {
+  const linkEl = document.querySelector(`#link-${item}`);
 
+  let offsetHeight = 0.6 * window.innerHeight;
+  inView.offset({
+    bottom: offsetHeight
+  });
+
+  inView(`#${item}`)
+    .on("enter", () => linkEl.classList.add("is-active"))
+    .on("exit", el => linkEl.classList.remove("is-active"));
+};
+
+// Apply method on each DOM element
+["goal", "team", "process", "four"].forEach(handleView);
 // Goal Hover
 document.getElementById("fcb").addEventListener("mouseover", mouseOver);
 document.getElementById("fcb-hover").addEventListener("mouseout", mouseOut);
