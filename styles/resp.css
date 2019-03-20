@@ -10,16 +10,7 @@
     /* CSS Grad*/
     background: linear-gradient(210deg, #812ba0 0%, #008e8f 100%);
   }
-  .heroImg {
-    overflow: hidden !important;
-    margin-top: 100px;
-    margin-left: 1px;
-    margin-right: 1px;
-    position: absolute !important;
-    z-index: 9000;
-    max-width: 100% !important;
-    max-height: auto;
-  }
+
   /* Value */
   .values-wrapper {
     position: relative;
