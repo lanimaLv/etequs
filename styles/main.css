@@ -94,11 +94,12 @@ body {
 }
 
 .swiper-container {
+  display: none;
   width: 100% !important;
   height: 100% !important;
 }
 .swiper-slide {
-  padding-right: 30vh;
+  padding-right: 65%;
   text-align: center;
   font-size: 18px;
   /* Center slide text vertically */
@@ -316,7 +317,7 @@ body {
   color: #35a692;
   font-weight: 500;
 }
-@media (max-width: 620px) {
+@media (min-width: 800px) {
   #top {
     width: 100%;
     padding-bottom: 10vh;
@@ -339,6 +340,9 @@ body {
   }
   #goal-desktop {
     display: none !important;
+  }
+  .sviper-container {
+    display: inline !important;
   }
   .values-wrapper {
     z-index: 500;
