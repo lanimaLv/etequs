@@ -24,7 +24,7 @@ body {
   overflow: hidden !important;
   position: relative;
   height: 100%;
-  height: 86vh;
+  height: 96vh;
   background: linear-gradient(210deg, #812ba0 0%, #008e8f 100%);
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vw), 0 100%);
   margin-bottom: -5vw;
@@ -34,7 +34,7 @@ body {
   z-index: 50;
   position: absolute;
   top: 0;
-  margin-top: 51vh;
+  margin-top: 61vh;
 }
 .nav-item a {
   color: #ffffff !important;
@@ -207,110 +207,25 @@ body {
 }
 /* Process */
 #process {
-  position: relative;
-  padding-top: 10%;
-  background-image: url("../img/process/background.png"); /* The image used */
-  background-color: #cccccc; /* Used if the image is unavailable */
-  height: 500px; /* You must set a specified height */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  padding-bottom: 25vw !important;
+  background-color: #eaecf2;
+  clip-path: polygon(0 0, 100% 0%, calc(100% - 0vw) 100%, 0 50%, 0 100%);
 }
 #process h5 {
+  margin-top: 7vw;
   color: #606080;
+  font-family: Raleway;
   font-size: 36px;
   font-weight: 500;
+  line-height: 0;
   text-align: center;
 }
-.first-card {
-  margin-left: 15%;
-  top: 0;
-  left: 0;
-  position: absolute;
-}
-.second-card {
-  margin-left: 28%;
-  top: 0;
-  left: 0;
-  position: absolute;
-}
-.third-card {
-  margin-left: 43%;
-  top: 0;
-  left: 0;
-  position: absolute;
-}
-.fourth-card {
-  margin-left: 55%;
-  top: 0;
-  left: 0;
-  position: absolute;
-}
-.fifth-card {
-  margin-top: 18.6%;
-  margin-left: 43.3%;
-  top: 0;
-  left: 0;
-  position: absolute;
-}
-#process-mobile {
-  display: none;
-}
-/* Arrow */
-.arrow1 {
-  visibility: hidden;
-  z-index: 2000;
-  margin-top: 10em;
-  margin-left: 30em;
-  position: absolute;
-  width: 200px;
-}
-/* Horse Head */
-
-#horse-head {
-  margin-top: 30%;
-  margin-left: 15%;
-  top: 0;
-  left: 0;
-  position: absolute;
-  z-index: 900;
-}
-
-#horse-head2 {
-  margin-top: 10%;
-  margin-left: 10%;
-  top: 0;
-  left: 0;
-  position: absolute;
-  z-index: 900;
-}
-#horse-head3 {
-  margin-top: 30%;
-  margin-left: 10%;
-  top: 0;
-  left: 0;
-  position: absolute;
-  z-index: 900;
-}
-#horse-head4 {
-  margin-top: 10%;
-  margin-left: 10%;
-  top: 0;
-  left: 0;
-  position: absolute;
-  z-index: 900;
-}
-#horse-head5 {
-  margin-top: 5%;
-  margin-left: 15%;
-  top: 0;
-  left: 0;
-  position: absolute;
-  z-index: 900;
+#process img {
+  margin-top: 5vw;
 }
 /* Partners */
 #partners {
-  margin-top: 30% !important;
+  margin-top: 10% !important;
   width: 100%;
   background-color: white;
 }
@@ -382,33 +297,33 @@ body {
 }
 @media (max-width: 620px) {
   #top {
-    padding-bottom: 70vh;
+    width: 100%;
+    padding-bottom: 10vh;
     overflow: hidden !important;
     position: relative;
-    height: 90vh;
+    height: 95vh;
     background: linear-gradient(210deg, #812ba0 0%, #008e8f 100%);
     clip-path: none;
   }
   .hero-img {
     padding: 0;
     text-align: none !important;
-    width: 500px;
-    height: 320px;
+    width: 400px;
+    height: 250px;
     margin-left: 0;
     z-index: 50;
     position: absolute;
     top: 0;
-    margin-top: 69vh;
+    margin-top: 78.5vh;
   }
-  .sub-content {
-    float: none;
+  .values-wrapper {
+    z-index: 500;
     text-align: center !important;
-    overflow: hidden;
-    color: #ffffff;
-    font-size: 21px;
-  }
-  #contact-btn-icon {
-    margin-left: 22vh;
+    position: relative;
+    padding-top: 20vh;
+    position: relative;
+    padding-bottom: 15vh;
+    overflow: hidden !important;
   }
 }
 @media (min-width: 800px) {
