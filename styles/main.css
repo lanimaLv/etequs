@@ -98,6 +98,7 @@ body {
   height: 100% !important;
 }
 .swiper-slide {
+  padding-right: 30vh;
   text-align: center;
   font-size: 18px;
   /* Center slide text vertically */
