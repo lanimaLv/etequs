@@ -380,3 +380,37 @@ body {
   color: #35a692;
   font-weight: 500;
 }
+@media (max-width: 620px) {
+  #top {
+    padding-bottom: 70vh;
+    overflow: hidden !important;
+    position: relative;
+    height: 90vh;
+    background: linear-gradient(210deg, #812ba0 0%, #008e8f 100%);
+    clip-path: none;
+  }
+  .hero-img {
+    padding: 0;
+    text-align: none !important;
+    width: 550px;
+    height: 320px;
+    margin-right: 90vh !important;
+    margin-left: 0;
+    z-index: 50;
+    position: absolute;
+    top: 0;
+    margin-top: 69vh;
+  }
+  .sub-content {
+    float: none;
+    text-align: center !important;
+    overflow: hidden;
+    color: #ffffff;
+    font-size: 21px;
+  }
+  #contact-btn-icon {
+    margin-left: 22vh;
+  }
+}
+@media (min-width: 800px) {
+}
