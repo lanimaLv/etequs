@@ -17,6 +17,15 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css"
+    />
   </head>
 
   <body>
@@ -170,7 +179,28 @@
           <h4>What Is Your Goal?</h4>
         </div>
       </div>
-      <div class="row">
+
+      <!-- Swiper -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/goal/card1-hover.png" class="img-fluid" alt="image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/goal/card2-hover.png" class="img-fluid" alt="image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/goal/card3-hover.png" class="img-fluid" alt="image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/goal/card4-hover.png" class="img-fluid" alt="image" />
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+      <!-- Desktop -->
+      <div class="row" id="goal-desktop">
         <div class="col-md-6 text-right" id="card1-sect">
           <img
             src="img/goal/card1.png"
@@ -573,6 +603,21 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- Swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        }
+      });
+    </script>
     <script src="js/jquery.js"></script>
   </body>
 </html>
