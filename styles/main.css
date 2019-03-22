@@ -368,3 +368,8 @@ body {
   font-size: 16px;
   line-height: 24px;
 }
+#privacy-a {
+  text-decoration: underline;
+  color: #35a692;
+  font-weight: 500;
+}
