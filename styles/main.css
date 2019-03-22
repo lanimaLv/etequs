@@ -392,9 +392,8 @@ body {
   .hero-img {
     padding: 0;
     text-align: none !important;
-    width: 550px;
+    width: 500px;
     height: 320px;
-    margin-right: 90vh !important;
     margin-left: 0;
     z-index: 50;
     position: absolute;
