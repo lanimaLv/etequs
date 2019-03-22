@@ -348,9 +348,7 @@ body {
   line-height: 36px;
   text-align: center;
 }
-#cta2-btn-radius {
-  border-radius: 40% !important;
-}
+
 /* Footer */
 #sticky-footer {
   margin-top: 5%;

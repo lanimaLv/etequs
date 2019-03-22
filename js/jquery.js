@@ -55,8 +55,8 @@ $(document).ready(function() {
   });
 
   //Card2
-  $("#card3-btn").hide();
-  $("#card3-hover").hide();
+  $("#card2-btn").hide();
+  $("#card2-hover").hide();
   $("#card2-btn").mouseenter(function() {
     $("#card2").hide();
     $("#card2-hover").show("slow");
@@ -188,6 +188,14 @@ $(document).ready(function() {
   //5
   $("#contact2").hide();
   $("#cta2-btn-slide").click(function() {
+    $("#contact2").toggle();
+  });
+
+  $(".contact-btn").click(function() {
+    $("#contact2").toggle();
+  });
+
+  $(".card-a-btn").click(function() {
     $("#contact2").toggle();
   });
 });
