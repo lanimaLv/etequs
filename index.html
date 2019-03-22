@@ -459,7 +459,6 @@
                       src="img/btns/contact-btn.png"
                       alt="etequs contact button"
                       id="cta2-btn-slide"
-                      onclick="myFunction()"
                     />
                   </div>
                 </div>
@@ -482,9 +481,9 @@
           </div>
           <br />
           <div class="row">
-            <div class="col-md-12 text-center">
-              <form>
-                <div class="form-row align-items-center">
+            <div class="col-md-12">
+              <form class="form-inline justify-content-center">
+                <div class="form-row">
                   <div class="col-auto">
                     <label class="sr-only" for="inlineFormInput">Name</label>
                     <input
@@ -496,11 +495,11 @@
                   </div>
                   <div class="col-auto">
                     <label class="sr-only" for="inlineFormInputGroup"
-                      >Username</label
+                      >Email</label
                     >
                     <div class="input-group mb-2">
                       <input
-                        type="text"
+                        type="email"
                         class="form-control"
                         id="inlineFormInputGroup"
                         placeholder="Email Address:"
@@ -509,7 +508,11 @@
                   </div>
 
                   <div class="col-auto">
-                    <button type="submit" class="btn btn-warning mb-2">
+                    <button
+                      type="submit"
+                      id="cta2-btn-radius"
+                      class="btn btn-warning mb-2"
+                    >
                       Contact Us
                     </button>
                   </div>

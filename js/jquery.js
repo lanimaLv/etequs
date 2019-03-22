@@ -183,4 +183,11 @@ $(document).ready(function() {
     $("#horse-head4").hide();
     $("#horse-head5").hide();
   });
+
+  //CTA2
+  //5
+  $("#contact2").hide();
+  $("#cta2-btn-slide").click(function() {
+    $("#contact2").toggle();
+  });
 });
