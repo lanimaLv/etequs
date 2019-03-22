@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif !important;
+  position: relative;
+}
+
+/* Overlay Hero Nav */
+.container-fluid {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.overlay {
+  position: relative;
+  padding-bottom: 22.1%;
+  max-width: 100%;
+  max-height: auto;
+  /* CSS Grad*/
+  background: linear-gradient(210deg, #812ba0 0%, #008e8f 100%);
+}
+.nav-item a {
+  color: #ffffff !important;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 38px;
+}
+.nav-item {
+  padding-right: 20px !important;
+}
+.hero-text {
+  text-align: center;
+  padding-top: 10em;
+}
+.hero-text h1 {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 900;
+}
+.stc {
+  color: #ffbd00;
+}
+.sub-content {
+  color: #ffffff;
+  font-size: 21px;
+}
+
+.heroImg {
+  position: absolute;
+  margin-top: 5%;
+  margin-left: 450px;
+  margin-right: 450px;
+  top: 0;
+  overflow: visible !important;
+  z-index: 9000;
+  max-width: 100% !important;
+  max-height: auto;
+}
+/* Values */
+.values-wrapper {
+  position: relative;
+  margin-top: 300px;
+  padding-bottom: 100px;
+  overflow: hidden;
+}
+
+.values-wrapper h2 {
+  font-size: 36px;
+  color: #8a8aa7;
+  font-family: "Raleway";
+  font-weight: 500;
+}
+.values-wrapper p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #606080;
+  font-family: "Raleway";
+  font-weight: 400;
+}
+#shadow {
+  float: right !important;
+}
+
+/* Goal */
+#goal {
+  overflow: hidden;
+  background-color: #eaecf2;
+  padding-top: 10% !important;
+  padding-bottom: 10em !important;
+  max-width: 100%;
+  max-height: auto;
+  background-image: url("../goal-background.svg"); /* The image used */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  /*
+  -webkit-clip-path: polygon(0 0, 100% 33%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 33%, 100% 100%, 0% 100%);
+  */
+}
+#card4-btn,
+#card3-btn,
+#card2-btn,
+#card-btn {
+  color: #00037b;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+}
+#goal h4 {
+  color: #7886ab;
+  font-size: 48px;
+  font-weight: 900 !important;
+  margin-bottom: 10%;
+}
+#card-btn {
+  margin-top: 38%;
+  margin-left: 61%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+#card2-btn {
+  margin-top: 38%;
+  margin-left: 12%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+#card3-btn {
+  margin-top: 38%;
+  margin-left: 61%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+#card4-btn {
+  margin-top: 38%;
+  margin-left: 12%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+/* Team */
+#team {
+  overflow: hidden !important;
+}
+#team {
+  max-width: 100%;
+
+  position: relative;
+  overflow: visible;
+  background-image: linear-gradient(
+    150deg,
+    #008e8f 0%,
+    #008e8f 0%,
+    #812ba0 100%
+  );
+}
+#team video {
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  max-width: 100%;
+  /*  object-fit is not supported on IE  */
+  object-fit: cover;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+#team .container {
+  z-index: 2;
+  position: relative;
+  padding-bottom: 6em;
+}
+.team-title {
+  margin-top: 2em;
+  font-size: 36px;
+  color: #ffffff;
+  font-family: "Raleway";
+  font-weight: 500 !important;
+}
+.team-subtext {
+  font-size: 21px;
+  line-height: 36px;
+  color: #ffffff;
+  font-family: "Raleway";
+  font-weight: 400 !important;
+}
+.name-title {
+  margin-top: 5em;
+  font-size: 22px;
+  line-height: 24px;
+  color: #ffffff;
+  font-family: "Raleway";
+  font-weight: 700;
+}
+/* Process */
+#process {
+  position: relative;
+  padding-top: 10%;
+  background-image: url("../img/process/background.png"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+#process h5 {
+  color: #606080;
+  font-size: 36px;
+  font-weight: 500;
+  text-align: center;
+}
+.first-card {
+  margin-left: 15%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.second-card {
+  margin-left: 28%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.third-card {
+  margin-left: 43%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.fourth-card {
+  margin-left: 55%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.fifth-card {
+  margin-top: 18.6%;
+  margin-left: 43.3%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+#process-mobile {
+  display: none;
+}
+/* Arrow */
+.arrow1 {
+  visibility: hidden;
+  z-index: 2000;
+  margin-top: 10em;
+  margin-left: 30em;
+  position: absolute;
+  width: 200px;
+}
+/* Horse Head */
+
+#horse-head {
+  margin-top: 30%;
+  margin-left: 15%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 900;
+}
+
+#horse-head2 {
+  margin-top: 10%;
+  margin-left: 10%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 900;
+}
+#horse-head3 {
+  margin-top: 30%;
+  margin-left: 10%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 900;
+}
+#horse-head4 {
+  margin-top: 10%;
+  margin-left: 10%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 900;
+}
+#horse-head5 {
+  margin-top: 5%;
+  margin-left: 15%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 900;
+}
+/* Partners */
+#partners {
+  margin-top: 30% !important;
+  width: 100%;
+  background-color: white;
+}
+#partners h6 {
+  margin-left: 10%;
+  color: #606080;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 2;
+}
+
+/* CTA 2 */
+#contact {
+  margin-top: 5%;
+  background-image: url("../img/cta2/background.png"); /* The image used */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+#contact h4 {
+  padding-top: 10%;
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 0;
+  text-align: center;
+}
+#cta2-id .cta-sec-2-text {
+  color: #353b52;
+  font-family: Raleway;
+  font-size: 21px;
+  line-height: 36px;
+  text-align: center;
+}
+/* Footer */
+#sticky-footer h2 {
+  color: #353b52;
+  font-family: Avenir;
+  font-size: 36px;
+  text-align: center;
+}
+#sticky-footer h4 {
+  color: #353b52;
+  font-family: Raleway;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 24px;
+}
+#sticky-footer .f-contacts {
+  color: #353b52;
+  font-family: Raleway;
+  font-size: 16px;
+  line-height: 24px;
+}
