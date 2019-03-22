@@ -17,15 +17,24 @@ body {
 .container-fluid {
   margin: 0 !important;
   padding: 0 !important;
+  overflow: hidden;
 }
 
-.overlay {
+#top {
+  overflow: hidden !important;
   position: relative;
-  padding-bottom: 22.1%;
-  max-width: 100%;
-  max-height: auto;
-  /* CSS Grad*/
+  height: 100%;
+  height: 86vh;
   background: linear-gradient(210deg, #812ba0 0%, #008e8f 100%);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vw), 0 100%);
+  margin-bottom: -5vw;
+}
+.hero-img {
+  margin-left: 5vh;
+  z-index: 50;
+  position: absolute;
+  top: 0;
+  margin-top: 51vh;
 }
 .nav-item a {
   color: #ffffff !important;
@@ -34,7 +43,7 @@ body {
   line-height: 38px;
 }
 .nav-item {
-  padding-right: 20px !important;
+  padding-right: 40px !important;
 }
 .hero-text {
   text-align: center;
@@ -49,29 +58,24 @@ body {
   color: #ffbd00;
 }
 .sub-content {
+  overflow: hidden;
   color: #ffffff;
   font-size: 21px;
 }
-
-.heroImg {
-  position: absolute;
-  margin-top: 5%;
-  margin-left: 450px;
-  margin-right: 450px;
-  top: 0;
-  overflow: visible !important;
-  z-index: 9000;
-  max-width: 100% !important;
-  max-height: auto;
+#contact-btn-icon:hover {
+  opacity: 0.6;
+  transition: 900ms;
 }
+
 /* Values */
 .values-wrapper {
+  z-index: 500;
   position: relative;
-  margin-top: 300px;
-  padding-bottom: 100px;
-  overflow: hidden;
+  padding-top: 40vh;
+  position: relative;
+  padding-bottom: 15vh;
+  overflow: hidden !important;
 }
-
 .values-wrapper h2 {
   font-size: 36px;
   color: #8a8aa7;
@@ -91,21 +95,16 @@ body {
 
 /* Goal */
 #goal {
-  overflow: hidden;
+  overflow: hidden !important;
   background-color: #eaecf2;
-  padding-top: 10% !important;
-  padding-bottom: 10em !important;
+  padding-top: 35vh !important;
+  padding-bottom: 20vh;
   max-width: 100%;
   max-height: auto;
-  background-image: url("../goal-background.svg"); /* The image used */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-  /*
-  -webkit-clip-path: polygon(0 0, 100% 33%, 100% 100%, 0% 100%);
-  clip-path: polygon(0 0, 100% 33%, 100% 100%, 0% 100%);
-  */
+  clip-path: polygon(0 0, 100% calc(0% - (-30vw)), 100% 100%, 0 100%);
+  margin-top: -14vw;
 }
+
 #card4-btn,
 #card3-btn,
 #card2-btn,
@@ -159,7 +158,7 @@ body {
   max-width: 100%;
 
   position: relative;
-  overflow: visible;
+  overflow: hidden;
   background-image: linear-gradient(
     150deg,
     #008e8f 0%,
@@ -347,6 +346,10 @@ body {
   font-size: 21px;
   line-height: 36px;
   text-align: center;
+}
+#cta2-btn-slide:hover {
+  opacity: 0.6;
+  transition: 900ms;
 }
 
 /* Footer */

@@ -17,106 +17,101 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-
-    <title>Hello, world!</title>
   </head>
 
   <body>
-    <!-- Container -->
-    <div class="container-fluid" id="#top">
-      <!-- Overlay-->
-      <div class="overlay">
-        <!-- Nav Bar -->
-        <nav
-          class="navbar navbar-expand-lg scrolling-navbar fixed-top navbar-dark bg"
+    <div class="container-fluid">
+      <!-- Nav Bar -->
+      <nav
+        class="navbar navbar-expand-lg scrolling-navbar fixed-top navbar-dark bg"
+      >
+        <a class="navbar-brand" href="#top"
+          ><img
+            src="img/logo/SIte-LogoEtequs.svg"
+            width="131"
+            height="35"
+            alt="etequs logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          <a class="navbar-brand" href="#top"
-            ><img
-              src="img/logo/SIte-LogoEtequs.svg"
-              width="131"
-              height="35"
-              alt="etequs logo"
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#goal">What Is Your Goal?</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#team">Our Team</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#process">Process</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-
-        <div class="row">
-          <div class="col-md-12">
-            <div class="hero-text">
-              <h1>
-                We are Digital <span class="stc">Sales Turbo-Chargers</span
-                ><br />
-                from Northern Europe
-              </h1>
-            </div>
-            <!--// Hero Text Content -->
-          </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#goal">What Is Your Goal?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Our Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#process">Process</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
         </div>
-        <!-- Sub Content -->
+      </nav>
+    </div>
 
-        <br />
-        <br />
-        <div class="row">
-          <div class="col-md-7 text-right">
-            <p class="sub-content">
-              Comitted to provide a synergy of strategy,<br />
-              design, functionality & execution.
-            </p>
+    <!-- Container -->
+    <div class="container-fluid" id="top">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="hero-text">
+            <h1>
+              We are Digital <span class="stc">Sales Turbo-Chargers</span><br />
+              from Northern Europe
+            </h1>
           </div>
-          <div class="col-md-4">
-            <div class="contact-btn">
-              <a href="#contact2"
-                ><img
-                  src="img/btns/contact-btn.png"
-                  class="img-fluid"
-                  alt="etequs contact button"
-              /></a>
-            </div>
-          </div>
+          <!--// Hero Text Content -->
         </div>
-        <!--// Sub Content -->
-        <!-- Hero Img 2 -->
-
-        <div class="row">
-          <div class="col-md-12">
-            <div class="heroImg">
-              <img src="img/hero/BG-Image.png" class="img-fluid" alt="image" />
-            </div>
-          </div>
-        </div>
-
-        <!--// Hero Img Container -->
       </div>
-      <!--// Overlay -->
+      <!-- Sub Content -->
+
+      <br />
+      <br />
+      <div class="row">
+        <div class="col-md-7 text-right">
+          <p class="sub-content">
+            Comitted to provide a synergy of strategy,<br />
+            design, functionality & execution.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <div class="contact-btn">
+            <a href="#contact2"
+              ><img
+                src="img/btns/contact-btn.png"
+                class="img-fluid"
+                alt="etequs contact button"
+                id="contact-btn-icon"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <!--// Sub Content -->
     </div>
     <!--// Container-fluid -->
+    <div class="container text-center">
+      <div class="hero-img">
+        <img
+          src="img/hero/BG-Image.png"
+          width="100%"
+          height="100%"
+          alt="image"
+        />
+      </div>
+    </div>
 
     <!-- Values -->
     <div class="container-fluid text-center">
@@ -126,13 +121,15 @@
         <br />
         <br />
         <div class="row" id="values-row">
-          <div class="col-md-4" id="v-col-1">
+          <div class="col-md-4 text-right" id="v-col-1">
             <img src="img/values/value.png" class="img-fluid" alt="value" />
             <br />
             <br />
             <p>Show numbers and tangible impact.</p>
           </div>
-          <div class="col-md-1"><img src="img/values/shadow.png" alt="" /></div>
+          <div class="col-md-1">
+            <img src="img/values/shadow.png" alt="" />
+          </div>
           <div class="col-md-2">
             <img src="img/values/growth.png" class="img-fluid" alt="growth" />
             <br />
@@ -142,12 +139,15 @@
               reliable partnerships.
             </p>
           </div>
-          <div class="col-md-1"><img src="img/values/shadow.png" alt="" /></div>
-          <div class="col-md-4">
+          <div class="col-md-1">
+            <img src="img/values/shadow.png" alt="" />
+          </div>
+          <div class="col-md-4 text-left">
             <img
               src="img/values/challenges.png"
               class="img-fluid"
               alt="challenges"
+              id="values-overflow"
             />
             <br />
             <br />
@@ -166,11 +166,11 @@
     <!-- Goal -->
     <div class="container" id="goal">
       <div class="row">
-        <div class="col-md-12 text-center">
+        <div class="col-md-9 text-center">
           <h4>What Is Your Goal?</h4>
         </div>
       </div>
-      <div class="row text-center">
+      <div class="row">
         <div class="col-md-6 text-right" id="card1-sect">
           <img
             src="img/goal/card1.png"
@@ -190,7 +190,8 @@
             </button></a
           >
         </div>
-        <div class="col-md-6 text-left" id="card2-sect">
+
+        <div class="col-md-5 text-left" id="card2-sect">
           <img
             src="img/goal/card2.png"
             class="img-fluid"
@@ -319,7 +320,9 @@
           </div>
         </div>
       </div>
+    </div>
 
+    <div class="container-fluid">
       <!-- Our Process -->
       <section class="process" id="process">
         <h5>Our Process</h5>
@@ -387,239 +390,222 @@
           </div>
         </div>
       </section>
-
-      <!-- Partners -->
-      <div class="container-fluid" id="partners">
-        <div class="row">
-          <div class="col-md-12">
-            <h6>Our Integration Partners</h6>
-          </div>
-        </div>
-        <br />
-        <br />
-        <div class="row text-center">
-          <div class="col-md-3 col-xs-1">
-            <img
-              src="img/integration/ic1.png"
-              class="img-fluid"
-              alt="shopify"
-            />
-          </div>
-          <div class="col-md-3 col-xs-1">
-            <img
-              src="img/integration/ic2.png"
-              class="img-fluid"
-              alt="sharpSpring"
-            />
-          </div>
-          <div class="col-md-3 col-xs-1">
-            <img
-              src="img/integration/ic3.png"
-              class="img-fluid"
-              alt="magento"
-            />
-          </div>
-          <div class="col-md-3 col-xs-1">
-            <img src="img/integration/ic4.png" class="img-fluid" alt="amazon" />
-          </div>
-        </div>
-
-        <br />
-        <br />
-        <br />
-        <div class="row text-center">
-          <div class="col-md-4 col-xs-1">
-            <img
-              src="img/integration/ic5.png"
-              class="img-fluid"
-              alt="salesforce"
-            />
-          </div>
-          <div class="col-md-4 col-xs-1">
-            <img
-              src="img/integration/ic6.png"
-              class="img-fluid"
-              alt="doubleClick"
-            />
-          </div>
-          <div class="col-md-4 col-xs-1">
-            <img src="img/integration/ic7.png" class="img-fluid" alt="adobe" />
-          </div>
-        </div>
-      </div>
-
-      <!-- CTA2 -->
-      <div class="container-fluid" id="bottom-contact">
-        <section class="cta2" id="contact">
-          <div class="cta-overlay">
-            <div class="cta-text">
-              <div class="row">
-                <div class="col-md-12">
-                  <h4>
-                    Let’s Beat Your Competition
-                    <span class="together">Together.</span>
-                  </h4>
-                </div>
-              </div>
-              <br />
-              <br />
-              <br />
-              <div class="row">
-                <div class="col-md-12 text-center">
-                  <div class="cta2-div" id="cta2-button">
-                    <img
-                      src="img/btns/contact-btn.png"
-                      alt="etequs contact button"
-                      id="cta2-btn-slide"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-      <!-- CTA2 2 -->
-      <div class="jumbotron" id="contact2">
-        <!-- CTA Section 2 -->
-        <div class="cta-sec-2" id="cta2-id">
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <p class="cta-sec-2-text">
-                Please tell us your name and email address to start a
-                conversation:
-              </p>
-            </div>
-          </div>
-          <br />
-          <div class="row">
-            <div class="col-md-12">
-              <form class="form-inline justify-content-center">
-                <div class="form-row">
-                  <div class="col-auto">
-                    <label class="sr-only" for="inlineFormInput">Name</label>
-                    <input
-                      type="text"
-                      class="form-control mb-2"
-                      id="inlineFormInput"
-                      placeholder="First name:"
-                    />
-                  </div>
-                  <div class="col-auto">
-                    <label class="sr-only" for="inlineFormInputGroup"
-                      >Email</label
-                    >
-                    <div class="input-group mb-2">
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="inlineFormInputGroup"
-                        placeholder="Email Address:"
-                      />
-                    </div>
-                  </div>
-
-                  <div class="col-auto">
-                    <button
-                      type="submit"
-                      id="cta2-btn-radius"
-                      class="btn btn-warning mb-2"
-                    >
-                      Contact Us
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Footer -->
-      <footer id="sticky-footer" class="bg-white">
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <h2>To Find Us</h2>
-            </div>
-          </div>
-          <br />
-          <div class="row">
-            <div class="col-md-4">
-              <h4>Etequs LTD</h4>
-              <p>Street, Riga, Latvia, EU</p>
-              <div class="f-contacts">
-                <div class="phone">
-                  <img
-                    src="img/footer/phone.png"
-                    class="img-fluid"
-                    alt="phone"
-                  />
-
-                  +371 909229992
-                </div>
-                <div class="email">
-                  <img
-                    src="img/footer/email.png"
-                    class="img-fluid"
-                    alt="emial"
-                  />
-
-                  +371 909229992
-                </div>
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div class="row">
-                <div class="col-md-2">
-                  <img
-                    src="img/footer/TWEtequs.svg"
-                    class="img-fluid"
-                    width="40"
-                    alt="twitter"
-                  />
-                </div>
-                <div class="col-md-2">
-                  <img
-                    src="img/footer/FB-v02Etequs.svg"
-                    width="40"
-                    alt="facebook"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="col-md-2">
-                  <img
-                    src="img/footer/FBEtequs.svg"
-                    width="20"
-                    alt="facebook"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="col-md-2">
-                  <img
-                    src="img/footer/InstaEtequs.svg"
-                    width="40"
-                    alt="instagram"
-                    class="img-fluid"
-                  />
-                </div>
-              </div>
-              <br />
-              <br />
-              <div class="row">
-                <div class="col-md-8">
-                  <p>
-                    All rights reserved © 2019 Etequs.
-                    <a href="privacy.html" id="privacy-a"> Terms & Privacy </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
 
+    <!-- Partners -->
+    <div class="container-fluid" id="partners">
+      <div class="row">
+        <div class="col-md-12">
+          <h6>Our Integration Partners</h6>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div class="row text-center">
+        <div class="col-md-3 col-xs-1">
+          <img src="img/integration/ic1.png" class="img-fluid" alt="shopify" />
+        </div>
+        <div class="col-md-3 col-xs-1">
+          <img
+            src="img/integration/ic2.png"
+            class="img-fluid"
+            alt="sharpSpring"
+          />
+        </div>
+        <div class="col-md-3 col-xs-1">
+          <img src="img/integration/ic3.png" class="img-fluid" alt="magento" />
+        </div>
+        <div class="col-md-3 col-xs-1">
+          <img src="img/integration/ic4.png" class="img-fluid" alt="amazon" />
+        </div>
+      </div>
+
+      <br />
+      <br />
+      <br />
+      <div class="row text-center">
+        <div class="col-md-4 col-xs-1">
+          <img
+            src="img/integration/ic5.png"
+            class="img-fluid"
+            alt="salesforce"
+          />
+        </div>
+        <div class="col-md-4 col-xs-1">
+          <img
+            src="img/integration/ic6.png"
+            class="img-fluid"
+            alt="doubleClick"
+          />
+        </div>
+        <div class="col-md-4 col-xs-1">
+          <img src="img/integration/ic7.png" class="img-fluid" alt="adobe" />
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA2 -->
+    <div class="container-fluid" id="bottom-contact">
+      <section class="cta2" id="contact">
+        <div class="cta-overlay">
+          <div class="cta-text">
+            <div class="row">
+              <div class="col-md-12">
+                <h4>
+                  Let’s Beat Your Competition
+                  <span class="together">Together.</span>
+                </h4>
+              </div>
+            </div>
+            <br />
+            <br />
+            <br />
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <div class="cta2-div" id="cta2-button">
+                  <img
+                    src="img/btns/contact-btn.png"
+                    alt="etequs contact button"
+                    id="cta2-btn-slide"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- CTA2 2 -->
+    <div class="jumbotron" id="contact2">
+      <!-- CTA Section 2 -->
+      <div class="cta-sec-2" id="cta2-id">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p class="cta-sec-2-text">
+              Please tell us your name and email address to start a
+              conversation:
+            </p>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-md-12">
+            <form class="form-inline justify-content-center">
+              <div class="form-row">
+                <div class="col-auto">
+                  <label class="sr-only" for="inlineFormInput">Name</label>
+                  <input
+                    type="text"
+                    class="form-control mb-2"
+                    id="inlineFormInput"
+                    placeholder="First name:"
+                  />
+                </div>
+                <div class="col-auto">
+                  <label class="sr-only" for="inlineFormInputGroup"
+                    >Email</label
+                  >
+                  <div class="input-group mb-2">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="inlineFormInputGroup"
+                      placeholder="Email Address:"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-auto">
+                  <button
+                    type="submit"
+                    id="cta2-btn-radius"
+                    class="btn btn-warning mb-2"
+                  >
+                    Contact Us
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="sticky-footer" class="bg-white">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2>To Find Us</h2>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-md-4">
+            <h4>Etequs LTD</h4>
+            <p>Street, Riga, Latvia, EU</p>
+            <div class="f-contacts">
+              <div class="phone">
+                <img src="img/footer/phone.png" class="img-fluid" alt="phone" />
+
+                +371 909229992
+              </div>
+              <div class="email">
+                <img src="img/footer/email.png" class="img-fluid" alt="emial" />
+
+                +371 909229992
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-2">
+                <img
+                  src="img/footer/TWEtequs.svg"
+                  class="img-fluid"
+                  width="40"
+                  alt="twitter"
+                />
+              </div>
+              <div class="col-md-2">
+                <img
+                  src="img/footer/FB-v02Etequs.svg"
+                  width="40"
+                  alt="facebook"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-md-2">
+                <img
+                  src="img/footer/FBEtequs.svg"
+                  width="20"
+                  alt="facebook"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-md-2">
+                <img
+                  src="img/footer/InstaEtequs.svg"
+                  width="40"
+                  alt="instagram"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <br />
+            <br />
+            <div class="row">
+              <div class="col-md-8">
+                <p>
+                  All rights reserved © 2019 Etequs.
+                  <a href="privacy.html" id="privacy-a"> Terms & Privacy </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!--// Container -->
 
     <!-- Optional JavaScript -->
