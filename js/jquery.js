@@ -10,20 +10,19 @@ function deferVideo() {
   });
 }
 window.onload = deferVideo;
-//Scroll BackgroundChanges
+
+function checkScroll() {
+	var scroll = $(window).scrollTop();
+	if (scroll > 700) {
+		$(".navbar").css("background", "rgba(0,0,0,0.6)").css("padding-top", ".5rem");
+	} else {
+		$(".navbar").css("background", "none").css("padding-top", "35px");
+	}
+}
+
 $(document).ready(function() {
-  $(window).scroll(function() {
-    var scroll = $(window).scrollTop();
-    if (scroll > 700) {
-      $(".navbar")
-        .css("transition", "3s")
-        .css("background", "black")
-        .css("opacity", "0.6");
-    } else {
-      $(".navbar").css("background", "none");
-      $(".navbar").css("opacity", "1");
-    }
-  });
+	checkScroll();
+  $(window).scroll(checkScroll);
 
   //Click Hide
   $(".navbar-nav>li>a").on("click", function() {
@@ -184,18 +183,11 @@ $(document).ready(function() {
     $("#horse-head5").hide();
   });
 
-  //CTA2
-  //5
-  $("#contact2").hide();
+
+  $(".contact-btn, .card-a-btn").click(function() {
+    $("#contact2").slideDown();
+  });
   $("#cta2-btn-slide").click(function() {
-    $("#contact2").toggle();
-  });
-
-  $(".contact-btn").click(function() {
-    $("#contact2").toggle();
-  });
-
-  $(".card-a-btn").click(function() {
-    $("#contact2").toggle();
+    $("#contact2").slideToggle();
   });
 });

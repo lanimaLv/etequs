@@ -1,40 +1,73 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,500,700,900");
 html {
   scroll-behavior: smooth;
 }
-
 * {
   margin: 0;
   padding: 0;
 }
-
 body {
   font-family: "Raleway", sans-serif !important;
   position: relative;
 }
-
-/* Overlay Hero Nav */
+.navbar {
+	transition: 3s;
+}
 .container-fluid {
   margin: 0 !important;
   padding: 0 !important;
   overflow: hidden;
 }
 
-#top {
-  overflow: hidden !important;
-  position: relative;
-  height: 100%;
-  height: 96vh;
-  background: linear-gradient(210deg, #812ba0 0%, #008e8f 100%);
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vw), 0 100%);
-  margin-bottom: -5vw;
+/* Hero */
+#top {	
+	width: 100%;
+	height: 100vh;
+	overflow: hidden !important;
+	position: relative;
+	background: linear-gradient(210deg, #812ba0 0%, #008e8f 85%);
+	padding-top: 80px !important;
+}
+#top-cover {
+	z-index: 40;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: calc(100vw * 0.32);
+	fill: #ffffff;
+}
+.container-hero {
+	z-index: 50;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.container-hero-img {
+	margin: 0 -15px;
+	position: relative;
 }
 .hero-img {
-  margin-left: 5vh;
-  z-index: 50;
-  position: absolute;
-  top: 0;
-  margin-top: 61vh;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.container-cityscape {
+	z-index: 30;
+	position: absolute;
+	bottom: calc(100vw * 0.245);
+	left: 0;
+	right: 0;
+}
+.container-cityscape-img {
+	position: relative;
+}
+.cityscape-img {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 .nav-item a {
   color: #ffffff !important;
@@ -47,32 +80,30 @@ body {
 }
 .hero-text {
   text-align: center;
-  padding-top: 10em;
-}
-.hero-text h1 {
+	margin: 80px 15px;
   color: #ffffff;
   font-size: 48px;
   font-weight: 900;
 }
-.stc {
+.h-accent {
   color: #ffbd00;
 }
 .sub-content {
   overflow: hidden;
   color: #ffffff;
   font-size: 21px;
+	margin-top: 0.5rem;
 }
 #contact-btn-icon:hover {
   opacity: 0.6;
+	filter: alpha(opacity=60);
   transition: 900ms;
 }
 
 /* Values */
 .values-wrapper {
-  z-index: 500;
   position: relative;
-  padding-top: 40vh;
-  position: relative;
+  padding-top: 50px;
   padding-bottom: 15vh;
   overflow: hidden !important;
 }
@@ -81,16 +112,18 @@ body {
   color: #8a8aa7;
   font-family: "Raleway";
   font-weight: 500;
+	margin-bottom: 40px;
 }
 .values-wrapper p {
+	margin-top: 30px;
   font-size: 14px;
   line-height: 24px;
   color: #606080;
   font-family: "Raleway";
   font-weight: 400;
 }
-#shadow {
-  float: right !important;
+#values-row {
+	padding-top: 40px;
 }
 
 .swiper-container {
@@ -117,17 +150,18 @@ body {
   align-items: center;
 }
 /* Goal */
-#goal {
-  overflow: hidden !important;
-  background-color: #eaecf2;
-  padding-top: 35vh !important;
-  padding-bottom: 20vh;
-  max-width: 100%;
-  max-height: auto;
-  clip-path: polygon(0 0, 100% calc(0% - (-30vw)), 100% 100%, 0 100%);
-  margin-top: -14vw;
+.container-goal {	
+	padding: 200px 0 100px;
+	background: #eaecf2;
 }
-
+.slant-left {
+	width: 100%;
+	/*height: calc(100vw * 0.32);*/
+	height: 300px;
+	position: relative;
+	bottom: -10px;
+	fill: #eaecf2;
+}
 #card4-btn,
 #card3-btn,
 #card2-btn,
@@ -135,7 +169,7 @@ body {
   color: #00037b;
   font-family: Raleway;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 30px;
   text-align: center;
 }
@@ -143,7 +177,7 @@ body {
   color: #7886ab;
   font-size: 48px;
   font-weight: 900 !important;
-  margin-bottom: 10%;
+  margin: 0 15px 160px 15px;
 }
 #card-btn {
   margin-top: 38%;
@@ -173,15 +207,14 @@ body {
   left: 0;
   position: absolute;
 }
+
 /* Team */
 #team {
   overflow: hidden !important;
-}
-#team {
   max-width: 100%;
-
+	height: 100vh;
+	min-height: 720px;
   position: relative;
-  overflow: hidden;
   background-image: linear-gradient(
     150deg,
     #008e8f 0%,
@@ -192,22 +225,24 @@ body {
 #team video {
   overflow: hidden;
   position: absolute;
-  z-index: 1;
   top: 0;
-  max-width: 100%;
+  z-index: 1;
+	min-width: 100%;
+	min-height: 100%;
   /*  object-fit is not supported on IE  */
   object-fit: cover;
+  background-size: cover;
   background-position: center; /* Center the image */
   background-repeat: no-repeat;
   opacity: 0.3;
+	filter: alpha(opacity=30);
 }
 #team .container {
   z-index: 2;
   position: relative;
-  padding-bottom: 6em;
 }
 .team-title {
-  margin-top: 2em;
+  margin: 80px 15px 50px;
   font-size: 36px;
   color: #ffffff;
   font-family: "Raleway";
@@ -219,15 +254,9 @@ body {
   color: #ffffff;
   font-family: "Raleway";
   font-weight: 400 !important;
+	margin-bottom: 100px;
 }
-.name-title {
-  margin-top: 5em;
-  font-size: 22px;
-  line-height: 24px;
-  color: #ffffff;
-  font-family: "Raleway";
-  font-weight: 700;
-}
+
 /* Process */
 #process {
   padding-bottom: 25vw !important;
@@ -259,99 +288,232 @@ body {
   line-height: 2;
 }
 
-/* CTA 2 */
+/* Contact */
 #contact {
-  margin-top: 5%;
-  background-image: url("../img/cta2/background.png"); /* The image used */
-  height: 500px; /* You must set a specified height */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background-image: url("../img/cta2/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+	padding: 160px 15px;
 }
 #contact h4 {
-  padding-top: 10%;
+  margin-bottom: 80px;
   color: #ffffff;
   font-family: Raleway;
   font-size: 48px;
   font-weight: 900;
-  line-height: 0;
+  line-height: 1.2;
   text-align: center;
 }
-#cta2-id .cta-sec-2-text {
+#contact2 {
+	padding: 80px 15px 65px;
+	background: #eaecf2;
+}
+#contact-form .btn,
+#contact-form .form-control {
+	border-radius: 30px;
+	font-size: 17px;
+	line-height: 17px;
+	padding: 27px 25px 12px;
+	margin-bottom: 15px;
+}
+#contact-form .form-control-label {
+	position: absolute;
+	top: 5px;
+	right: 25px;
+	left: 25px;
+	padding: 0 15px;
+	font-size: 0.85em;
+  opacity: 0.6;
+	filter: alpha(opacity=60);
+	text-transform: uppercase;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+#contact-form .btn {
+	font-weight: 700;
+	padding: 20px;
+}
+.form-title {
   color: #353b52;
-  font-family: Raleway;
-  font-size: 21px;
-  line-height: 36px;
+  font-family: "Raleway";
+  font-size: 20px;
+  line-height: 20px;
   text-align: center;
+	margin-bottom: 50px;
+}
+#cta2-btn-slide {
+	cursor: pointer;
 }
 #cta2-btn-slide:hover {
   opacity: 0.6;
+	filter: alpha(opacity=60);
   transition: 900ms;
+}
+
+/* Contact Block */
+.container-contact {
+	margin-bottom: 30px;
+  color: #ffffff;
+}
+.container-contact h4 {
+  font-size: 22px;
+  line-height: 24px;
+  font-family: "Raleway";
+  font-weight: 700;
+}
+.contact-subtitle,
+.contact-details
+{
+	font-size: 0.9em;
+	color: inherit;
+}
+.contact-details img {
+	margin-right: 20px;
+}
+.contact-details a {
+	text-decoration: none;
+	color: inherit;
 }
 
 /* Footer */
 #sticky-footer {
-  margin-top: 5%;
+  margin: 80px 0 120px;
 }
 #sticky-footer h2 {
   color: #353b52;
-  font-family: Avenir;
+  font-family: "Raleway";
   font-size: 36px;
   text-align: center;
+	margin-bottom: 50px;
 }
-#sticky-footer h4 {
+#sticky-footer .container-contact {
+	margin-bottom: 0;
   color: #353b52;
-  font-family: Raleway;
-  font-size: 22px;
-  font-weight: bold;
-  line-height: 24px;
-}
-#sticky-footer .f-contacts {
-  color: #353b52;
-  font-family: Raleway;
-  font-size: 16px;
-  line-height: 24px;
 }
 #privacy-a {
   text-decoration: underline;
   color: #35a692;
   font-weight: 500;
 }
-@media (min-width: 600px) {
-  #top {
-    width: 100%;
-    overflow: hidden !important;
-    position: relative;
-    height: 80vh;
-    background: linear-gradient(210deg, #812ba0 0%, #008e8f 100%);
-    clip-path: none;
-  }
-  .hero-img {
-    padding: 0 !important;
-    text-align: none !important;
-    width: 480px;
-    height: 250px;
-    margin-left: 0;
-    z-index: 50;
-    position: absolute;
-    top: 0;
-    margin-top: 64vh;
-  }
+.row-socials {
+	margin-bottom: 50px;
+}
+
+.separator-shadow {
+	height: 100%;
+	width: auto;
+	position: absolute;
+	z-index: 50;
+	top: 0;
+	right: -14%;
+}
+
+@media (max-width: 575.98px) {
+	.team-title {
+		margin: 80px 15px 25px;
+		font-size: 24px;
+	}
+	.team-subtext {
+		font-size: 16px;
+		line-height: 24px;
+    margin-bottom: 50px;
+	}
+	#sticky-footer .container-contact,
+	.container-socials
+	{
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+	.row-socials {
+		margin-top: 50px;
+	}
+}
+
+@media (min-width: 576px) {
+	.visible-xs	{
+		display: none;
+	}
   #goal-desktop {
     display: none !important;
   }
   .sviper-container {
     display: inline !important;
   }
-  .values-wrapper {
-    z-index: 500;
-    text-align: center !important;
-    position: relative;
-    padding-top: 20vh;
-    position: relative;
-    padding-bottom: 15vh;
-    overflow: hidden !important;
+}
+
+@media (max-width: 767.98px) {
+	#contact {
+		padding: 80px 15px;
+	}
+	#contact h4 {
+			margin-bottom: 40px;
+	}
+	#contact2 {
+		padding: 50px 15px 35px;
+	}
+	#sticky-footer {
+		margin: 40px 0 60px;
+	}
+	.hidden-sm	{
+		display: none;
+	}
+	.container-fluid-sm {
+    max-width: 100% !important;
+  }
+	.hero-text {
+    margin: 40px 15px;
+	}
+	.container-cityscape {
+		padding: 0 !important;
+	}
+}
+
+@media (min-width: 768px) {
+	.visible-sm	{
+		display: none;
+	}
+	#top-cover {
+		height: calc(1vw * 1.864 + 168.909px);
+	}
+	.container-hero-img {
+		margin: 0 11.25%;
+	}
+	.container-cityscape {
+		bottom: calc(1vw * 0.536 + 105.909px);
+	}
+	.container-cityscape-img {
+		margin: 30px;
+	}
+}
+
+@media (max-width: 991.98px) {
+	.container-fluid-md {
+    max-width: 100% !important;
   }
 }
-@media (min-width: 800px) {
+
+@media (min-width: 992px) {
+	.visible-md	{
+		display: none;
+	}
+	#top-cover {
+		height: calc(1vw * 1.864 + 233.259px);
+	}
+	.container-cityscape {
+		bottom: calc(1vw * 0.536 + 143.239px);
+	}
+}
+
+@media (min-width: 1200px) {
+	#top-cover {
+		height: calc(1vw * 1.864 + 280.017px);
+	}
+	.container-cityscape {
+		bottom: calc(1vw * 0.536 + 175.57px);
+	}
 }
