@@ -7,15 +7,14 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link rel="stylesheet" href="styles/main.css" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css" />
+    <link rel="stylesheet" href="styles/main.css" />
   </head>
 
   <body>
@@ -155,134 +154,92 @@
     <!-- Goal -->
     <div id="goal">
 			<svg class="slant-left" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="xMidYMin slice">
-					<path d="M0,100 L0,0 L100,30 L100,100 Z" vector-effect="non-scaling-stroke" />
+					<path d="M0,100 L0,0 L100,40 L100,100 Z" vector-effect="non-scaling-stroke" />
 			</svg>
 			<div class="container-goal">
 				<div class="container">
 					<h4>What Is Your Goal?</h4>
-					<!-- Swiper -->
-					<div class="swiper-container">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<img
-									src="img/goal/card1-hover.png"
-									width="300px"
-									height="400px"
-									alt="image"
-								/>
-							</div>
-							<div class="swiper-slide">
-								<img
-									src="img/goal/card2-hover.png"
-									width="300px"
-									height="400px"
-									alt="image"
-								/>
-							</div>
-							<div class="swiper-slide">
-								<img
-									src="img/goal/card3-hover.png"
-									width="300px"
-									height="400px"
-									alt="image"
-								/>
-							</div>
-							<div class="swiper-slide">
-								<img
-									src="img/goal/card4-hover.png"
-									width="300px"
-									height="400px"
-									alt="image"
-								/>
+				</div>
+				<div class="swiper-container container container-cards">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide container-card">
+							<div class="container-card-inner">
+								<div class="container-card-default">
+									<img
+										src="img/goal/card1.png"
+										class="img-fluid"
+										alt="Showcase Your Business with the Perfect Online Powerhouse"
+									/>
+								</div>
+								<div class="container-card-hover">
+									<img
+										src="img/goal/card1-hover.png"
+										class="img-fluid"
+										alt="Web Development and E-Commerce"
+									/>
+									<a href="#contact2" class="btn btn-warning btn-card">Let’s Start!</a>
+								</div>
 							</div>
 						</div>
-						<!-- Add Pagination -->
-						<div class="swiper-pagination"></div>
-					</div>
-					<!-- Desktop -->
-					<div class="row" id="goal-desktop">
-						<div class="col-md-6 text-right" id="card1-sect">
-							<img
-								src="img/goal/card1.png"
-								id="card1"
-								class="img-fluid"
-								alt="card"
-							/>
-							<img
-								src="img/goal/card1-hover.png"
-								id="card1-hover"
-								class="img-fluid"
-								alt="card"
-							/>
-							<a href="#contact2" class="card-a-btn"
-								><button type="button" class="btn btn-warning" id="card-btn">
-									Let’s Start!
-								</button></a
-							>
+						<div class="swiper-slide container-card">
+							<div class="container-card-inner">
+								<div class="container-card-default">
+									<img
+										src="img/goal/card2.png"
+										class="img-fluid"
+										alt="Make the Data Work in Your Favor"
+									/>
+								</div>
+								<div class="container-card-hover">
+									<img
+										src="img/goal/card2-hover.png"
+										class="img-fluid"
+										alt="UX and Conversion Rate Optimization"
+									/>
+									<a href="#contact2" class="btn btn-warning btn-card">Let’s Start!</a>
+								</div>
+							</div>
 						</div>
-
-						<div class="col-md-5 text-left" id="card2-sect">
-							<img
-								src="img/goal/card2.png"
-								class="img-fluid"
-								id="card2"
-								alt="card"
-							/>
-							<img
-								src="img/goal/card2-hover.png"
-								id="card2-hover"
-								class="img-fluid"
-								alt="card"
-							/>
-							<a href="#contact2" class="card-a-btn"
-								><button type="button" class="btn btn-warning" id="card2-btn">
-									Let’s Start!
-								</button></a
-							>
+						<div class="swiper-slide container-card">
+							<div class="container-card-inner">
+								<div class="container-card-default">
+									<img
+										src="img/goal/card3.png"
+										class="img-fluid"
+										alt="Know Exactly What You’re Getting"
+									/>
+								</div>
+								<div class="container-card-hover">
+									<img
+										src="img/goal/card3-hover.png"
+										class="img-fluid"
+										alt="Marketing and Outreach Campaigns"
+									/>
+									<a href="#contact2" class="btn btn-warning btn-card">Let’s Start!</a>
+								</div>
+							</div>
 						</div>
-					</div>
-					<br />
-					<div class="row">
-						<div class="col-md-6 text-right" id="card3-sect">
-							<img
-								src="img/goal/card3.png"
-								id="card3"
-								class="img-fluid"
-								alt="card"
-							/>
-							<img
-								src="img/goal/card3-hover.png"
-								id="card3-hover"
-								class="img-fluid"
-								alt="card"
-							/>
-							<a href="#contact2" class="card-a-btn"
-								><button type="button" class="btn btn-warning" id="card3-btn">
-									Let’s Start!
-								</button></a
-							>
-						</div>
-
-						<div class="col-md-6 text-left" id="card4-sect">
-							<img
-								src="img/goal/card4.png"
-								class="img-fluid"
-								id="card4"
-								alt="card"
-							/>
-							<img
-								src="img/goal/card4-hover.png"
-								id="card4-hover"
-								class="img-fluid"
-								alt="card"
-							/>
-							<a href="#contact2" class="card-a-btn"
-								><button type="button" class="btn btn-warning" id="card4-btn">
-									Let’s Start!
-								</button></a
-							>
+						<div class="swiper-slide container-card">
+							<div class="container-card-inner">
+								<div class="container-card-default">
+									<img
+										src="img/goal/card4.png"
+										class="img-fluid"
+										alt="Plant the Cornerstones of  Your Business"
+									/>
+								</div>
+								<div class="container-card-hover">
+									<img
+										src="img/goal/card4-hover.png"
+										class="img-fluid"
+										alt="Sales and Marketing Integration"
+									/>
+									<a href="#contact2" class="btn btn-warning btn-card">Let’s Start!</a>
+								</div>
+							</div>
 						</div>
 					</div>
+					<div class="swiper-pagination"></div>
 				</div>
 			</div>
     </div>
@@ -290,7 +247,7 @@
     <!-- Team -->
     <div class="container-fluid">
       <div id="team">
-        <video autoplay muted loop poster="img/team/team-poster.png">
+        <video autoplay muted loop poster="img/team/team-poster.jpg">
           <source src="" data-src="img/team/loop.mp4" type="video/mp4" />
         </video>
 
@@ -369,55 +326,14 @@
     </div>
 
     <!-- Partners -->
-    <div class="container-fluid" id="partners">
-      <div class="row">
-        <div class="col-md-12">
-          <h6>Our Integration Partners</h6>
-        </div>
+    <div id="partners">
+			<div class="container">
+        <h6>Our Integration Partners</h6>
       </div>
-      <br />
-      <br />
-      <div class="row text-center">
-        <div class="col-12 col-md-3">
-          <img src="img/integration/ic1.png" class="img-fluid" alt="shopify" />
-        </div>
-        <div class="col-12 col-md-3">
-          <img
-            src="img/integration/ic2.png"
-            class="img-fluid"
-            alt="sharpSpring"
-          />
-        </div>
-        <div class="col-12 col-md-3">
-          <img src="img/integration/ic3.png" class="img-fluid" alt="magento" />
-        </div>
-        <div class="col-12 col-md-3">
-          <img src="img/integration/ic4.png" class="img-fluid" alt="amazon" />
-        </div>
-      </div>
-
-      <br />
-      <br />
-      <br />
-      <div class="row text-center">
-        <div class="col-12 col-md-4">
-          <img
-            src="img/integration/ic5.png"
-            class="img-fluid"
-            alt="salesforce"
-          />
-        </div>
-        <div class="col-12 col-md-4">
-          <img
-            src="img/integration/ic6.png"
-            class="img-fluid"
-            alt="doubleClick"
-          />
-        </div>
-        <div class="col-12 col-md-4">
-          <img src="img/integration/ic7.png" class="img-fluid" alt="adobe" />
-        </div>
-      </div>
+			<div class="container-partners text-center">
+				<img src="/img/partners.png" class="img-fluid hidden-sm" alt="Integration Partners" />
+				<img src="/img/partners-mobile.png" class="img-fluid visible-sm" alt="Integration Partners" />
+			</div>
     </div>
 
     <!-- Contact -->
@@ -459,7 +375,7 @@
 							<input type="email" class="form-control text-center text-md-left" id="contact-form-email"/>
 						</div>
 						<div class="offset-md-4 col-md-4 col-lg-2 offset-lg-0">
-							<button type="submit"id="cta2-btn-radius" class="btn btn-warning btn-block">Contact Us</button>
+							<button type="submit" class="btn btn-warning btn-block">Contact Us</button>
 						</div>
 					</div>
 				</form>
@@ -544,21 +460,8 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- Swiper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".swiper-container", {
-        slidesPerView: 2,
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true
-        }
-      });
-    </script>
     <script src="js/jquery.js"></script>
   </body>
 </html>
