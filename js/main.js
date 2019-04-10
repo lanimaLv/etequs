@@ -22,7 +22,6 @@ function checkScroll() {
 
 function getScreenMode() {
 	var width = $(window).width() + 17;
-	console.log(width);
 	return width < 576 ? "xs" : (width < 768 ? "mobile" : (width < 992 ? "tablet" : "desktop"));
 }
 
