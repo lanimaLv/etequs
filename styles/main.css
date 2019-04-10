@@ -260,8 +260,12 @@ body {
 
 /* Process */
 #process {
-  padding: 0 35px 50vh;
+	min-height: 100vh;
+  padding: 5rem 0 60vh;
   background-color: #eaecf2;
+}
+#process h2 {
+	margin: 0 15px 1rem;
 }
 #process h2,
 #partners h2
@@ -512,6 +516,9 @@ footer .container-contact {
 			50vw,
 			45vw
 		;
+	}
+	#process {
+		padding-bottom: 50vh;
 	}
 	#partners {
 		position: relative;
