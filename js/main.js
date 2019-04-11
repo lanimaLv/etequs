@@ -12,80 +12,93 @@ function deferVideo() {
 window.onload = deferVideo;
 
 function checkScroll() {
-	var scroll = $(window).scrollTop();
-	if (scroll > 700) {
-		$(".navbar").addClass("navbar-bg").removeClass("navbar-padding");
-	} else {
-		$(".navbar").addClass("navbar-padding").removeClass("navbar-bg");
-	}
+  var scroll = $(window).scrollTop();
+  if (scroll > 700) {
+    $(".navbar")
+      .addClass("navbar-bg")
+      .removeClass("navbar-padding");
+  } else {
+    $(".navbar")
+      .addClass("navbar-padding")
+      .removeClass("navbar-bg");
+  }
 }
 
 function getScreenMode() {
-	var width = $(window).width() + 17;
-	return width < 576 ? "xs" : (width < 768 ? "mobile" : (width < 992 ? "tablet" : "desktop"));
+  var width = $(window).width() + 17;
+  return width < 576
+    ? "xs"
+    : width < 768
+    ? "mobile"
+    : width < 992
+    ? "tablet"
+    : "desktop";
 }
 
 function getSwiperSettings(mode) {
-	switch (mode) {
-		case "xs":
-			return {
-				slidesPerView: 1.3,
-				spaceBetween: 15,
-				centeredSlides: true,
-				loop: true,
-				pagination: {
-					el: ".swiper-pagination",
-					clickable: true
-				}
-			};
-		case "mobile":
-			return {
-				slidesPerView: 1.4,
-				spaceBetween: 15,
-				centeredSlides: true,
-				loop: true,
-				pagination: {
-					el: ".swiper-pagination",
-					clickable: true
-				}
-			};
-		case "tablet":
-			return {
-				slidesPerView: 2,
-				slidesPerColumn: 2,
-				spaceBetween: 50,
-			};
-		case "desktop":
-			return {
-				slidesPerView: 2,
-				slidesPerColumn: 2,
-				spaceBetween: 100,
-			};
-	}
+  switch (mode) {
+    case "xs":
+      return {
+        slidesPerView: 1.3,
+        spaceBetween: 15,
+        centeredSlides: true,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        }
+      };
+    case "mobile":
+      return {
+        slidesPerView: 1.4,
+        spaceBetween: 15,
+        centeredSlides: true,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        }
+      };
+    case "tablet":
+      return {
+        slidesPerView: 2,
+        slidesPerColumn: 2,
+        spaceBetween: 50
+      };
+    case "desktop":
+      return {
+        slidesPerView: 2,
+        slidesPerColumn: 2,
+        spaceBetween: 100
+      };
+  }
 }
 
 window.currentScreenMode = null;
 window.swiper = null;
 
 function initSwiper() {
-	swiper = new Swiper(".swiper-container", getSwiperSettings(currentScreenMode));
+  swiper = new Swiper(
+    ".swiper-container",
+    getSwiperSettings(currentScreenMode)
+  );
 }
 
 $(document).ready(function() {
-	checkScroll();
-  $(window).scroll(checkScroll);	
-	
-	currentScreenMode = getScreenMode();
-	initSwiper();	
-	window.onresize = function() {
-		var newScreenMode = getScreenMode();
-		if (currentScreenMode != newScreenMode) {
-			currentScreenMode = newScreenMode;
-			swiper.destroy();
-			initSwiper();
-		}
-		swiper.init(getSwiperSettings());
-	}
+  checkScroll();
+  $(window).scroll(checkScroll);
+
+  currentScreenMode = getScreenMode();
+  initSwiper();
+  window.onresize = function() {
+    var newScreenMode = getScreenMode();
+    if (currentScreenMode != newScreenMode) {
+      currentScreenMode = newScreenMode;
+      swiper.destroy();
+      initSwiper();
+    }
+    swiper.init(getSwiperSettings());
+  };
 
   $(".navbar-nav>li>a").on("click", function() {
     $(".navbar-collapse").collapse("hide");
@@ -144,7 +157,6 @@ $(document).ready(function() {
     $("#horse-head4").hide();
     $("#horse-head5").hide();
   });
-
 
   $(".btn-contact-us, .btn-card, .btn-open-form").click(function() {
     $("#contact2").slideDown();
