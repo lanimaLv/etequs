@@ -91,60 +91,19 @@ $(document).ready(function() {
     $(".navbar-collapse").collapse("hide");
   });
 
-  //Process
-  //1
-  $("#horse-head").hide();
-  $(".first-card").mouseenter(function() {
-    $("#horse-head").show();
-  });
-  $(".first-card").mouseleave(function() {
-    $("#horse-head").hide();
-  });
-
-  //2
-  $("#horse-head2").hide();
-  $(".second-card").mouseenter(function() {
-    $("#horse-head2").show();
-  });
-  $(".second-card").mouseleave(function() {
-    $("#horse-head2").hide();
-  });
-
-  //3
-  $("#horse-head3").hide();
-  $(".third-card").mouseenter(function() {
-    $("#horse-head3").show();
-  });
-  $(".third-card").mouseleave(function() {
-    $("#horse-head3").hide();
-  });
-
-  //4
-  $("#horse-head4").hide();
-  $(".fourth-card").mouseenter(function() {
-    $("#horse-head4").show();
-  });
-  $(".fourth-card").mouseleave(function() {
-    $("#horse-head4").hide();
-  });
-
-  //5
-  $("#horse-head5").hide();
-  $(".fifth-card").mouseenter(function() {
-    $("#horse-head").show();
-    $("#horse-head2").show();
-    $("#horse-head3").show();
-    $("#horse-head4").show();
-    $("#horse-head5").show();
-  });
-  $(".fifth-card").mouseleave(function() {
-    $("#horse-head").hide();
-    $("#horse-head2").hide();
-    $("#horse-head3").hide();
-    $("#horse-head4").hide();
-    $("#horse-head5").hide();
-  });
-
+	$(".process-step-trigger").hover(function() {
+		var step = $(this).data("step");
+		$("[data-step=" + step + "]").css("opacity", "1").css("filter", "alpha(opacity=100)");
+		if (step == 5) {
+			$(".process-step-indicator:not(.process-arrow)").css("opacity", "1").css("filter", "alpha(opacity=100)");
+		}
+	}, function() {
+		var step = $(this).data("step");
+		$("[data-step=" + step + "]").css("opacity", "0").css("filter", "alpha(opacity=0)");
+		if (step == 5) {
+			$(".process-step-indicator:not(.process-arrow)").css("opacity", "0").css("filter", "alpha(opacity=0)");
+		}
+	});
 
   $(".btn-contact-us, .btn-card, .btn-open-form").click(function() {
     $("#contact2").slideDown();
