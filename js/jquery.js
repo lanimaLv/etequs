@@ -20,68 +20,15 @@ function checkScroll() {
 	}
 }
 
-function getScreenMode() {
-	var width = $(window).width() + 17;
-	console.log(width);
-	return width < 768 ? "mobile" : (width < 992 ? "tablet" : "desktop");
-}
-
-function getSwiperSettings(mode) {
-	switch (mode) {
-		case "mobile":
-			return {
-				slidesPerView: 1.4,
-				spaceBetween: 15,
-				centeredSlides: true,
-				loop: true,
-				pagination: {
-					el: ".swiper-pagination",
-					clickable: true
-				}
-			};
-		case "tablet":
-			return {
-				slidesPerView: 2,
-				slidesPerColumn: 2,
-				spaceBetween: 50,
-			};
-		case "desktop":
-			return {
-				slidesPerView: 2,
-				slidesPerColumn: 2,
-				spaceBetween: 100,
-			};
-	}
-}
-
-window.currentScreenMode = null;
-window.swiper = null;
-
-function initSwiper() {
-	swiper = new Swiper(".swiper-container", getSwiperSettings(currentScreenMode));
-}
-
 $(document).ready(function() {
 	checkScroll();
-  $(window).scroll(checkScroll);	
-	
-	currentScreenMode = getScreenMode();
-	initSwiper();	
-	window.onresize = function() {
-		var newScreenMode = getScreenMode();
-		if (currentScreenMode != newScreenMode) {
-			currentScreenMode = newScreenMode;
-			swiper.destroy();
-			initSwiper();
-		}
-		swiper.init(getSwiperSettings());
-	}
+  $(window).scroll(checkScroll);
 
   //Click Hide
   $(".navbar-nav>li>a").on("click", function() {
     $(".navbar-collapse").collapse("hide");
   });
-/*
+
   $("#card-btn").hide();
   $("#card1-hover").hide();
   $("#card-btn").mouseenter(function() {
@@ -180,8 +127,9 @@ $(document).ready(function() {
     $("#card2").show();
     $("#card2-btn").hide();
   });
-*/
+
   //Process
+
   //1
   $("#horse-head").hide();
   $(".first-card").mouseenter(function() {
@@ -236,7 +184,7 @@ $(document).ready(function() {
   });
 
 
-  $(".contact-btn, .btn-card").click(function() {
+  $(".contact-btn, .card-a-btn").click(function() {
     $("#contact2").slideDown();
   });
   $("#cta2-btn-slide").click(function() {
