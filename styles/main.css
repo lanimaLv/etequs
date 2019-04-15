@@ -304,6 +304,7 @@ body {
 }
 .process-arrow {
 	width: 21.5%;
+	transform: rotate(10deg);
 }
 
 /* Contact */
