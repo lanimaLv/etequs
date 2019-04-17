@@ -433,9 +433,6 @@ footer .container-contact {
 }
 
 @media (max-width: 575.98px) {
-	html {
-		font-size: 12px;
-	}
 	.team-title {
 		margin: 5rem 15px 1.5625rem;
 		font-size: 24px;
@@ -457,6 +454,9 @@ footer .container-contact {
 }
 
 @media (min-width: 576px) {
+	#top {
+		min-height: 900px;
+	}
 	.visible-xs	{
 		display: none;
 	}
@@ -466,6 +466,9 @@ footer .container-contact {
 }
 
 @media (max-width: 767.98px) {
+	html {
+		font-size: 12px;
+	}
 	#contact {
 		padding: 80px 15px;
 	}
@@ -504,6 +507,9 @@ footer .container-contact {
 @media (min-width: 768px) {
 	.visible-sm	{
 		display: none;
+	}
+	#top {
+		min-height: 850px;
 	}
 	#top-cover {
 		height: calc(1vw * 1.864 + 168.909px);
@@ -589,6 +595,7 @@ footer .container-contact {
 		padding-top: 35px;
 	}
 	#top {
+		min-height: 950px;
 		padding-top: 5rem;
 	}
 	#top-cover {
@@ -600,6 +607,9 @@ footer .container-contact {
 }
 
 @media (min-width: 1200px) {
+	#top {
+		min-height: 1050px;
+	}
 	#top-cover {
 		height: calc(1vw * 1.864 + 280.017px);
 	}
