@@ -13,7 +13,7 @@ window.onload = deferVideo;
 
 function checkScroll() {
 	var scroll = $(window).scrollTop();
-	if (scroll > 700) {
+	if (scroll > 50) {
 		$(".navbar").addClass("navbar-bg").removeClass("navbar-padding");
 	} else {
 		$(".navbar").addClass("navbar-padding").removeClass("navbar-bg");
@@ -84,7 +84,6 @@ $(document).ready(function() {
 			swiper.destroy();
 			initSwiper();
 		}
-		swiper.init(getSwiperSettings());
 	}
 
   $(".navbar-nav>li>a").on("click", function() {

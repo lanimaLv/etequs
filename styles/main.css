@@ -27,6 +27,24 @@ body {
 .navbar-bg {
 	background: rgba(0,0,0,0.6);
 }
+.separator-shadow {
+	height: 100%;
+	width: auto;
+	position: absolute;
+	z-index: 50;
+	top: 0;
+	right: -17%;
+}
+.btn {
+  font-family: "Raleway" !important;
+	font-size: 17px;
+	line-height: 17px;
+	font-weight: 700;
+	border-radius: 30px;
+}
+.btn-warning {
+  color: #00037b;
+}
 
 /* Hero */
 #top {
@@ -76,9 +94,14 @@ body {
 }
 .step-text {
 	color: #ffbd00;
-	font-size: 1rem;
+	font-size: 13px;
 	position: absolute;
 }
+.hero-img #step-1 { top: 2%; left: 11%; }
+.hero-img #step-2 { top: -11%; left: 25.5%; }
+.hero-img #step-3 { top: -10.5%; left: 53.5%; }
+.hero-img #step-4 { top: 2%; left: 60.5%; }
+.hero-img #step-5 { top: 8%; left: 74%; }
 .nav-item a {
   color: #ffffff !important;
   font-size: 14px;
@@ -137,7 +160,7 @@ body {
 	margin-top: 2rem;
 }
 .row-values p {
-	margin-top: 30px;
+	margin-top: 1.875rem;
   font-size: 14px;
   line-height: 24px;
   color: #606080;
@@ -202,7 +225,11 @@ body {
 	position: absolute;
 	bottom: 11%;
 	left: 20%;
-	padding: 15px 20px !important;
+	padding: 0.9375rem 1.25rem;
+	font-size: 1.0625rem;
+	line-height: 1.0625rem;
+	font-weight: 700;
+	border-radius: 1.875rem;
 }
 
 /* Team */
@@ -226,7 +253,9 @@ body {
 #team video {
   overflow: hidden;
   position: absolute;
-  top: 0;
+  top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
   z-index: 1;
 	min-width: 100%;
 	min-height: 100%;
@@ -396,25 +425,6 @@ footer .container-contact {
 	margin-bottom: 50px;
 }
 
-.separator-shadow {
-	height: 100%;
-	width: auto;
-	position: absolute;
-	z-index: 50;
-	top: 0;
-	right: -17%;
-}
-.btn {
-  font-family: "Raleway" !important;
-	font-size: 17px !important;
-	line-height: 17px !important;
-	font-weight: 700 !important;
-	border-radius: 30px !important;
-}
-.btn-warning {
-  color: #00037b !important;
-}
-
 .swiper-pagination {
 	position: static;
 	margin: 2rem 15px 0;
@@ -433,6 +443,12 @@ footer .container-contact {
 }
 
 @media (max-width: 575.98px) {
+	#goal {
+		margin-top: -2rem;
+	}
+	.btn-card {
+    bottom: 6%;
+	}
 	.team-title {
 		margin: 5rem 15px 1.5625rem;
 		font-size: 24px;
@@ -453,10 +469,25 @@ footer .container-contact {
 	}
 }
 
+@media (min-width: 450px) {
+	.step-text {
+		font-size: 15px;
+	}
+	.hero-img #step-1 { top: 6%; left: 13%; }
+	.hero-img #step-2 { top: -7%; left: 27.5%; }
+	.hero-img #step-3 { top: -8.5%; left: 53.5%; }
+	.hero-img #step-4 { top: 4%; left: 60.5%; }
+	.hero-img #step-5 { top: 10%; left: 74%; }
+}
 @media (min-width: 576px) {
 	#top {
 		min-height: 900px;
 	}
+	.hero-img #step-1 { top: 7%; left: 15%; }
+	.hero-img #step-2 { top: -6%; left: 29.5%; }
+	.hero-img #step-3 { top: -7.5%; left: 55.5%; }
+	.hero-img #step-4 { top: 5%; left: 62.5%; }
+	.hero-img #step-5 { top: 11%; left: 74%; }
 	.visible-xs	{
 		display: none;
 	}
@@ -505,6 +536,11 @@ footer .container-contact {
 }
 
 @media (min-width: 768px) {
+	.hero-img #step-1 { top: 13%; left: 10.5%; }
+	.hero-img #step-2 { top: 0.75%; left: 27%; }
+	.hero-img #step-3 { top: -5.75%; left: 51%; }
+	.hero-img #step-4 { top: 5%; left: 63%; }
+	.hero-img #step-5 { top: 10%; left: 70.25%; }
 	.visible-sm	{
 		display: none;
 	}
@@ -588,6 +624,11 @@ footer .container-contact {
 }
 
 @media (min-width: 992px) {
+	.hero-img #step-1 { top: 15%; left: 10.5%; }
+	.hero-img #step-2 { top: 2.75%; left: 27%; }
+	.hero-img #step-3 { top: -5.75%; left: 51%; }
+	.hero-img #step-4 { top: 7%; left: 63%; }
+	.hero-img #step-5 { top: 12%; left: 70.25%; }
 	.visible-md	{
 		display: none;
 	}
