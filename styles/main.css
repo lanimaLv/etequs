@@ -645,6 +645,11 @@ footer .container-contact {
 	.container-cityscape {
 		bottom: calc(1vw * 0.536 + 143.239px);
 	}
+	.btn-vertical-center {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
 }
 
 @media (min-width: 1200px) {

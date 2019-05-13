@@ -542,35 +542,27 @@
           id="contact-form"
           class="container container-fluid-md"
         >
-          <div class="row">
-            <div class="col-md-5 offset-md-1 col-lg-4">
-              <p class="form-control-label text-center text-md-left">
-                <label for="contact-form-name">First Name:</label>
-              </p>
-              <input
-                type="text"
-                name="name"
-                class="form-control text-center text-md-left"
-                id="contact-form-name"
-              />
-            </div>
-            <div class="col-md-5 col-lg-4">
-              <p class="form-control-label text-center text-md-left">
-                <label for="contact-form-email">Email Address:</label>
-              </p>
-              <input
-                type="email"
-                name="email"
-                class="form-control text-center text-md-left"
-                id="contact-form-email"
-              />
-            </div>
-            <div class="offset-md-4 col-md-4 col-lg-2 offset-lg-0">
-              <button type="submit" class="btn btn-warning btn-block">
-                Contact Us
-              </button>
-            </div>
-          </div>
+					<div class="row">
+						<div class="col-md-10 offset-md-1 col-lg-8">
+							<div class="row">
+								<div class="col-sm-6">
+									<p class="form-control-label text-center text-md-left"><label for="contact-form-name">First Name:</label></p>
+									<input type="text" class="form-control text-center text-md-left" id="contact-form-name" name="name" required />
+								</div>
+								<div class="col-sm-6">
+									<p class="form-control-label text-center text-md-left"><label for="contact-form-email">Email Address:</label></p>
+									<input type="email" class="form-control text-center text-md-left" id="contact-form-email" name="email" required />
+								</div>
+								<div class="col-12">
+									<p class="form-control-label text-center text-md-left"><label for="contact-form-email">How can we help you:</label></p>
+									<input type="text" class="form-control text-center text-md-left" id="contact-form-content" name="content" />
+								</div>
+							</div>
+						</div>
+						<div class="offset-md-4 col-md-4 col-lg-2 offset-lg-0">
+							<button type="submit" class="btn btn-warning btn-block btn-vertical-center">Contact Us</button>
+						</div>
+					</div>
         </form>
       </div>
     </section>
